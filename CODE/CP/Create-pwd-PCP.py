@@ -12,7 +12,7 @@ INSTRUCTIONS
 fp = input("What is your chosen password???")
 sp = input("Confirm Password")
 if fp == sp:
-    cenv = open("p.env","w")
+    cenv = open("p.txt","w")
     cenv.write(fp)
     print("DONE!!")
     print("BTW if you need to reset your password you can use this program!!")
