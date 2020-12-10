@@ -12,15 +12,15 @@ INSTRUCTIONS
 fp = input("What is your chosen password???")
 sp = input("Confirm Password")
 if fp == sp:
-    break
+    cenv = open("p.env","w")
+    cenv.write(fp)
+    print("DONE!!")
+    print("BTW if you need to reset your password you can use this program!!")
+    os.system("del /f pcfc.py")
+    os.system("rm pcfc.py")
+
 else:
     print("Passwords Don't Match :(")
     print("Now the program will close in 5 seconds!!")
     time.sleep(6)
     quit()
-cenv = open("p.env","w")
-cenv.write(fp)
-print("DONE!!")
-print("BTW if you need to reset your password you can use this program!!")
-os.system("del /f pcfc.py")
-os.system("rm pcfc.py")
