@@ -10,9 +10,10 @@ if cp == "Y":
     open("Create-pwd-PCP.py", "wb").write(a.content)
     os.system("python Create-pwd-PCP.py")
 
-ap = open("p.env","r")
+ap = open("p.txt","r")
+rap = ap.read()
 uep = input("Password:")
-if ap == uep:
+if rap == uep:
     print("Cool You've Entered the Right Password!!")
     name = input("Please Enter Your Username")
     time.sleep(2)
