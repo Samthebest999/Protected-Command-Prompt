@@ -13,6 +13,8 @@ if cp == "Y":
 ap = open("p.txt", "r")
 rap = ap.read()
 uep = input("Password:")
+hashed_uep = hashlib.sha512(uep)
+digest_of_hashed_uep = hashed_uep.hexdigest()
 if rap == uep:
     print("Cool You've Entered the Right Password!!")
     name = input("Please Enter Your Username")
