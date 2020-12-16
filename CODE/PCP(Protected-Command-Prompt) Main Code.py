@@ -1,10 +1,8 @@
 # Protected Command Prompt!!
 import time
 import os
-
-os.system("pip install requests")
-import requests
-
+os.system("pip install requests passlib")
+import requests, hashlib
 cp = input("Would You like to create or reset your password? (Y/N case sensitive)")
 if cp == "Y":
     durl = "https://raw.githubusercontent.com/Samthebest999/Protected-Command-Prompt/main/CODE/CP/Create-pwd-PCP.py"

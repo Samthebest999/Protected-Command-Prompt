@@ -1,4 +1,4 @@
-import time, os
+import time, os , hashlib
 #Create Password for PROTECTED COMMAND PROMPT!!!
 print("Hello It's time to create a password for your Protected Command Prompt!!!")
 print("""
@@ -13,7 +13,8 @@ fp = input("What is your chosen password???")
 sp = input("Confirm Password")
 if fp == sp:
     cenv = open("p.txt","w")
-    cenv.write(fp)
+    hp = sha512(fp)
+    cenv.write(hp)
     print("DONE!!")
     print("BTW if you need to reset your password you can use this program!!")
     os.system("del /f pcfc.py")
