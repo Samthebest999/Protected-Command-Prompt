@@ -1,7 +1,7 @@
 # Protected Command Prompt!!
 import time
 import os
-os.system("pip install requests passlib")
+os.system("pip install requests")
 import requests, hashlib
 cp = input("Would You like to create or reset your password? (Y/N case sensitive)")
 if cp == "Y":
