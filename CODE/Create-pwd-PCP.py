@@ -13,8 +13,7 @@ fp = input("What is your chosen password???")
 sp = input("Confirm Password")
 if fp == sp:
     cenv = open("p.txt","w")
-    hp = hashlib.sha512(fp).hexdigest
-    cenv.write(hp)
+    cenv.write(fp)
     print("DONE!!")
     print("BTW if you need to reset your password you can use this program!!")
     os.system("del /f pcfc.py")
