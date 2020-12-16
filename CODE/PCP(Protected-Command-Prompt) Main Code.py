@@ -1,16 +1,18 @@
-#Protected Command Prompt!!
+# Protected Command Prompt!!
 import time
 import os
+
 os.system("pip install requests")
 import requests
+
 cp = input("Would You like to create or reset your password? (Y/N case sensitive)")
 if cp == "Y":
-    durl= "https://raw.githubusercontent.com/Samthebest999/Protected-Command-Prompt/main/CODE/CP/Create-pwd-PCP.py"
+    durl = "https://raw.githubusercontent.com/Samthebest999/Protected-Command-Prompt/main/CODE/CP/Create-pwd-PCP.py"
     a = requests.get(durl, allow_redirects=True)
     open("Create-pwd-PCP.py", "wb").write(a.content)
     os.system("python Create-pwd-PCP.py")
 
-ap = open("p.txt","r")
+ap = open("p.txt", "r")
 rap = ap.read()
 uep = input("Password:")
 if rap == uep:
