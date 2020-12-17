@@ -15,7 +15,6 @@ if fp == sp:
     efp = fp.encode("utf-8")
     hashed_efp = hashlib.sha512(efp)
     hexdigest_of_hashed_efp = hashed_efp.hexdigest()
-    print(hexdigest_of_hashed_efp)
     cenv = open("p.txt","w")
     cenv.write(hexdigest_of_hashed_efp)
     cenv.close()
